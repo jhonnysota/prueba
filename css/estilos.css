@@ -1,0 +1,304 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,auto);
+    border: black;
+    grid-template-areas: "header header "
+                         "servicios servicios servicios servicios"
+                         "productos productos productos productos"
+                         "contacto contacto contacto contacto"
+                         "texto texto texto texto"
+                         "tiendaVirtual tiendaVirtualtext"
+                         "tienda"
+                         "imagentexto1 imagentexto1"
+                         "imagentexto1 imagentexto1"
+                         "galeriaServ galeriaServ galeriaServ"
+                         "img1" 
+                         "img2"
+                         "img3" 
+                         "img4"
+                         "admin"
+                         "publi"
+                         "dise"
+                         "gerente"
+                         "piepag"
+                         "tiendatext"
+                         ;
+                         grid-gap: 10px;
+}
+
+.header{
+    grid-area:header;
+    background-image: url(../img/marvel.png);
+    background-size: 100% 100%;
+    height:200px;
+    grid-row:1;
+    grid-column: 1/span 2;
+
+
+}
+
+/*----HEADER-----*/
+.header h2{
+    font-size:50px;
+    margin-top:100px;
+    font-family: 'Bevan' ;
+    color:#11185F;
+    text-align:center;
+    letter-spacing: 10px;
+    line-height:20px;
+    grid-row:1;
+    grid-column: 2/span4;   
+}
+
+.header h4{
+    font-size:16px;
+    font-family: Candara;
+    color:#11185F;
+    text-align:center;
+    text-transform: uppercase;
+    grid-row:1;
+    grid-column: 3/span4;
+    padding: 20px;
+    margin: 20px;
+}
+
+.header a{
+    display:block;
+    background:#ff8000;
+    color:#fff;
+    text-align:center;
+    width:20%;
+    margin:0 auto;
+    padding:10px 20px;
+    font-family: 'Bevan' ;
+    letter-spacing: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.servicios{
+    grid-area:servicios;
+    grid-row:1;
+    grid-column: 3/span4;
+    padding: 50px;
+    margin-top: 50px;
+    display:block;
+    color:#fff;
+    text-align:center;
+}
+.productos{
+    grid-area:productos;
+    grid-row:1;
+    grid-column: 4;
+    padding:50px;
+    margin: 50px;
+    display:block;
+    color:#fff;
+    text-align:center;
+}
+.contacto{
+    grid-area:contacto;
+    grid-row:1;
+    grid-column: 3;
+    padding:50px;
+    margin: 50px;
+    display:block;
+    color:#fff;
+    text-align:center;
+}
+.texto{
+    grid-area:contacto;
+    grid-row:2;
+    opacity: inherit;
+    grid-column: 1 /span 2;
+    padding:50px;
+    margin: 50px;  
+}
+.tiendaVirtual{
+    grid-area:tiendaVirtual;
+    background-image: url(../img/photo-1519581706005-e1b7e2de264c.jpg);
+    grid-row:2/span 3;
+    grid-column: 3 ;
+    background-size: 100% 100%;
+    object-fit: cover;
+    border-radius: 23%;
+    background-size: 100% 100%;
+    height:750px;
+    margin-top: 80px;
+    box-shadow: 6px 6px 6px black;
+    
+}
+
+.tiendaVirtualtext{
+    grid-area:tiendaVitiendaVirtualtextrtual;
+    grid-row:2;
+    grid-column: 3 ;
+    object-fit: cover;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    color: #11185F;
+}
+.tiendatext{
+    grid-area:tiendatext;
+    grid-row:2 ;
+    grid-column: 4 ;
+    object-fit: cover;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    color: #11185F;
+}
+.tienda{
+    grid-area:tienda;
+    background-image: url(../img/photo-1471018238625-87ca40f13b31.jpg);
+    grid-row:2 / span 3;
+    grid-column: 4 ;
+    border-radius: 10px;
+    border-radius: 23%;
+    object-fit: cover;
+    background-size: 100% 100%;
+    background-size: 100% 100%;
+    height:750px;
+    margin-top: 80px;
+    box-shadow: 6px 6px 6px black;
+}
+.imagentexto1{
+    grid-area:imagentexto1;
+    background-image: url(../img/photo-1471018238625-87ca40f13b31.jpg);
+    grid-row:3;
+    
+    grid-column: 1 ;
+    padding:50px;
+    border-radius: 23%;
+    margin: 50px;  
+    box-shadow: 6px 6px 6px black;
+}
+.imagentexto2{
+    grid-area:imagentexto2;
+    background-image: url(../img/photo-1471018238625-87ca40f13b31.jpg);
+    grid-row:3;
+    grid-column: 2;
+    padding:50px;
+    margin: 50px;  
+    border-radius: 23%;
+    box-shadow: 6px 6px 6px black;
+}
+.galeriaServ{
+    grid-area:galeriaServ;
+    background-image: url(../img/Screenshot_15.png);
+    grid-row:4;
+    grid-column: 1/span 2 ;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:400px;
+    border-radius: 23%;
+}
+.img1{
+    grid-area:img1;
+    background-image: url(../img/ecommerce-en-peru-768x401.jpg);
+    grid-row:4/span 5;
+    grid-column:  3;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:800px;
+    border-radius: 23%;
+    margin-right: 10px;
+    box-shadow: 6px 6px 6px black;
+}
+.img2{
+    grid-area:img2;
+    background-image: url(../img/marketing-en-tu-negocio.gif);
+    grid-row: 4/span 5;
+    grid-column:  4 ;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:800px;
+    border-radius: 23%;
+    box-shadow: 6px 6px 6px black;
+}
+.img3{
+    grid-area:img3;
+    background-image: url(../img/tecnologiagif.gif);
+    grid-row:5;
+    grid-column:  1;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:400px;
+    border-radius: 23%;
+}
+.img4{
+    grid-area:img4;    
+    background-image: url(../img/iddigitalpargimp.gif);
+    grid-row: 5;
+    grid-column:  2 ;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:400px;
+    border-radius: 23%;
+}
+.gerente{
+    grid-area:img4;    
+    background-image: url(../img/gerente.jpg);
+    grid-row: 6;
+    grid-column:  1 ;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:400px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.admin{
+    grid-area:img4;    
+    background-image: url(../img/administrado.jpg);
+    grid-row: 6;
+    grid-column:  2 ;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:400px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.publi{
+    grid-area:img4;    
+    background-image: url(../img/publicista-clipart-3.png);
+    grid-row: 6;
+    grid-column:  3 ;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:400px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.dise{
+    grid-area:img4;    
+    background-image: url(../img/diseño-web-png-3.png);
+    grid-row: 6;
+    grid-column:  4;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:400px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.piepag{
+    grid-area:img4;    
+    background-image: url(../img/pie\ pagina.png);
+    grid-row: 7;
+    grid-column: 1/span 4 ;
+    object-fit: contain;
+    background-size: 100% 100%;
+    height:400px;
+    width: 100%;
+}
+.quienes{
+    font-family: cursive;
+    font-size: 15px;
+    color: #11185F;
+
+}
+.menu{
+    background-color: #11185F;
+    border-radius: 30px;
+}
